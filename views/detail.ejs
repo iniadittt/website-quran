@@ -1,0 +1,114 @@
+<!Doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AL-QURAN ONLINE</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+<style>
+    @font-face {
+        font-family: 'LPMQ';
+        src: url('https://uminabdillah.github.io/fonts/lpmq.eot');
+        src: url('https://uminabdillah.github.io/fonts/lpmq.eot?#iefix') format('embedded-opentype'), url('https://uminabdillah.github.io/fonts/lpmq.ttf') format('truetype');
+        font-weight: 400;
+        font-weight: normal;
+        font-display: swap;
+    }
+    
+    .arab {
+        font-size: 32px;
+        line-height: 72px;
+        font-family: LPMQ, "Traditional Arabic", Tahoma, sans-serif;
+        font-weight: normal;
+        text-align: right;
+        direction: rtl;
+    }
+    
+    a {
+        text-decoration: none;
+        color: #212529;
+    }
+</style>
+
+<body>
+    <div class="container mt-3 mb-5">
+        <ul class="nav justify-content-center mb-3">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/surah">Al-Qur'an</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled">Doa-doa Harian</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled">Contact US</a>
+            </li>
+        </ul>
+
+
+
+        <h1>
+            <%= datas.name %>
+        </h1>
+        <h3>Jumlah Ayat :
+            <%= datas.numberOfAyahs %>
+        </h3>
+        <h3 class="text-center arab">
+            <%= datas.bismillah.arab %>
+        </h3>
+
+        <% data.forEach(value => { %>
+            <div class="row mt-5 pt-5">
+                <div class="col-1">
+                    <h5>
+                        <%= value.number.inSurah %>
+                    </h5>
+                </div>
+                <div class="col-11">
+                    <h3 class="text-end arab">
+                        <%= value.arab %>
+                    </h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <%= value.translation %>
+                </div>
+            </div>
+            <% }); %>
+
+                <div class="d-flex justify-content-center mt-5">
+                    <% if(datas.number == 1){ %>
+                        <a href="">Selanjutnya</a>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+                        </svg>
+                        <% } else if (datas.number == 114){ %>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-short" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"/>
+                        </svg>
+                            <a href="">Sebelumnya</a>
+                            <% } else { %>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-short" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"/>
+                            </svg>
+                                <a href="">Sebelumnya</a>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;<a href="">Selanjutnya</a>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+                            </svg>
+                                <% } %>
+                </div>
+
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+
+</html>

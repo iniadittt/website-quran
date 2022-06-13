@@ -1,0 +1,211 @@
+<!Doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AL-QURAN ONLINE</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container mt-3">
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/surah">Al-Qur'an</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled">Doa-doa Harian</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled">Contact US</a>
+            </li>
+        </ul>
+
+        <form action="/surah" method="post">
+            <div class="input-group mt-5">
+                <select class="form-select" aria-label="Example select with button addon" name="inputSurah">
+                <option selected>Cari surah disini...</option>
+                <option value="1">1. Al Fatihah (Pembuka)</option>
+                <option value="2">2. Al Baqarah (Sapi Betina)</option>
+                <option value="3">3. Ali Imran (Keluarga Imran)</option>
+                <option value="4">4. An Nisa (Wanita)</option>
+                <option value="5">5. Al Ma'idah (Jamuan)</option>
+                <option value="6">6. Al An'am (Hewan Ternak)</option>
+                <option value="7">7. Al-A'raf (Tempat yang Tertinggi)</option>
+                <option value="8">8. Al-Anfal (Harta Rampasan Perang)</option>
+                <option value="9">9. At-Taubah(Pengampunan)</option>
+                <option value="10">10. Yunus (Nabi Yunus)</option>
+                <option value="11">11. Hud (Nabi Hud)</option>
+                <option value="12">12. Yusuf (Nabi Yusu)</option>
+                <option value="13">13. Ar-Ra'd (Guruh)</option>
+                <option value="14">14. Ibrahim (Nabi Ibrahim)</option>
+                <option value="15">15. Al-Hijr (Gunung Al Hijr)</option>
+                <option value="16">16. An-Nahl (Lebah)</option>
+                <option value="17">17. Al-Isra' (Perjalanan Malam)</option>
+                <option value="18">18. Al-Kahf (Penghuni-penghuni Gua)</option>
+                <option value="19">19. Maryam (Maryam)</option>
+                <option value="20">20. Ta Ha (Ta Ha)</option>
+                <option value="21">21. Al-Anbiya (Nabi-Nabi)</option>
+                <option value="22">22. Al-Hajj (Haji)</option>
+                <option value="23">23. Al-Mu'minun (Orang-orang mukmin)</option>
+                <option value="24">24. An-Nur (Cahaya)</option>
+                <option value="25">25. Al-Furqan (Pembeda)</option>
+                <option value="26">26. Asy-Syu'ara' (Penyair)</option>
+                <option value="27">27. An-Naml (Semut)</option>
+                <option value="28">28. Al-Qasas (Kisah-kisah)</option>
+                <option value="29">29. Al-'Ankabut (Laba-laba)</option>
+                <option value="30">30. Ar-Rum (Bangsa Romawi)</option>
+                <option value="31">31. Luqman (Keluarga Luqman)</option>
+                <option value="32">32. As-Sajdah (Sajdah)</option>
+                <option value="33">33. Al-Ahzab (Golongan-golongan yang Bersekutu)</option>
+                <option value="34">34. Saba' (Kaum Saba')</option>
+                <option value="35">35. Fatir (Pencipta)</option>
+                <option value="36">36. Ya Sin (Yaasiin)</option>
+                <option value="37">37. As-Saffat (Barisan-barisan)</option>
+                <option value="38">38. Sad (Shaad)</option>
+                <option value="39">39. Az-Zumar (Rombongan-rombongan)</option>
+                <option value="40">40. Ghafir (Yang Mengampuni)</option>
+                <option value="41">41. Fussilat (Yang Dijelaskan)</option>
+                <option value="42">42. Asy-Syura (Musyawarah)</option>
+                <option value="43">43. Az-Zukhruf (Perhiasan)</option>
+                <option value="44">44. Ad-Dukhan (Kabut)</option>
+                <option value="45">45. Al-Jasiyah (Yang Bertekuk Lutut)</option>
+                <option value="46">46. Al-Ahqaf (Bukit-bukit Pasir)</option>
+                <option value="47">47. Muhammad (Nabi Muhammad)</option>
+                <option value="48">48. Al-Fath (Kemenangan)</option>
+                <option value="49">49. Al-Hujurat (Kamar-kamar)</option>
+                <option value="50">50. Qaf (Qaaf)</option>
+                <option value="51">51. Az-Zariyat (Angin yang Menerbangkan)</option>
+                <option value="52">52. At-Tur (Bukit)</option>
+                <option value="53">53. An-Najm (Bintang)</option>
+                <option value="54">54. Al-Qamar (Bulan)</option>
+                <option value="55">55. Ar-Rahman (Yang Maha Pemurah)</option>
+                <option value="56">56. Al-Waqi'ah (Hari Kiamat)</option>
+                <option value="57">57. Al-Hadid (Besi)</option>
+                <option value="58">58. Al-Mujadilah (Wanita yang Mengajukan Gugatan)</option>
+                <option value="59">59. Al-Hasyr (Pengusiran)</option>
+                <option value="60">60. Al-Mumtahanah (Wanita yang Diuji)</option>
+                <option value="61">61. As-Saff (Satu Barisan)</option>
+                <option value="62">62. Al-Jumu'ah (Hari Jum'at)</option>
+                <option value="63">63. Al-Munafiqun (Orang-orang yang Munafik)</option>
+                <option value="64">64. At-Tagabun (Hari Dinampakkan Kesalahan-kesalahan)</option>
+                <option value="65">65. At-Talaq (Talak)</option>
+                <option value="66">66. At-Tahrim (Mengharamkan)</option>
+                <option value="67">67. Al-Mulk (Kerajaan)</option>
+                <option value="68">68. Al-Qalam (Pena)</option>
+                <option value="69">69. Al-Haqqah (Hari Kiamat)</option>
+                <option value="70">70. Al-Ma'arij (Tempat Naik)</option>
+                <option value="71">71. Nuh (Nabi Nuh)</option>
+                <option value="72">72. Al-Jinn (Jin)</option>
+                <option value="73">73. Al-Muzzammil (Orang yang Berselimut)</option>
+                <option value="74">74. Al-Muddassir (Orang yang Berkemul)</option>
+                <option value="75">75. Al-Qiyamah (Kiamat)</option>
+                <option value="76">76. Al-Insan (Manusia)</option>
+                <option value="77">77. Al-Mursalat (Malaikat-Malaikat Yang Diutus)</option>
+                <option value="78">78. An-Naba' (Berita Besar)</option>
+                <option value="79">79. An-Nazi'at (Malaikat-Malaikat Yang Mencabut)</option>
+                <option value="80">80. 'Abasa (Ia Bermuka Masam)</option>
+                <option value="81">81. At-Takwir (Menggulung)</option>
+                <option value="82">82. Al-Infitar (Terbelah)</option>
+                <option value="83">83. Al-Tatfif (Orang-orang yang Curang)</option>
+                <option value="84">84. Al-Insyiqaq (Terbelah)</option>
+                <option value="85">85. Al-Buruj (Gugusan Bintang)</option>
+                <option value="86">86. At-Tariq (Yang Datang di Malam Hari)</option>
+                <option value="87">87. Al-A'la (Yang Paling Tinggi)</option>
+                <option value="88">88. Al-Gasyiyah (Hari Pembalasan)</option>
+                <option value="89">89. Al-Fajr (Fajar)</option>
+                <option value="90">90. Al-Balad (Negeri)</option>
+                <option value="91">91. Asy-Syams (Matahari)</option>
+                <option value="92">92. Al-Lail (Malam)</option>
+                <option value="93">93. Ad-Duha (Waktu Matahari Sepenggalahan Naik (Dhuha))</option>
+                <option value="94">94. Al-Insyirah (Melapangkan)</option>
+                <option value="95">95. At-Tin (Buah Tin)</option>
+                <option value="96">96. Al-'Alaq (Segumpal Darah)</option>
+                <option value="97">97. Al-Qadr (Kemuliaan)</option>
+                <option value="98">98. Al-Bayyinah (Pembuktian)</option>
+                <option value="99">99. Az-Zalzalah (Kegoncangan)</option>
+                <option value="100">100. Al-'Adiyat (Berlari Kencang)</option>
+                <option value="101">101. Al-Qari'ah (Hari Kiamat)</option>
+                <option value="102">102. At-Takasur (Bermegah-megahan)</option>
+                <option value="103">103. Al-'Asr (Masa)</option>
+                <option value="104">104. Al-Humazah (Pengumpat)</option>
+                <option value="105">105. Al-Fil (Gajah)</option>
+                <option value="106">106. Quraisy (Suku Quraisy)</option>
+                <option value="107">107. Al-Ma'un (Barang-barang yang Berguna)</option>
+                <option value="108">108. Al-Kausar (Nikmat yang Berlimpah)</option>
+                <option value="109">109. Al-Kafirun (Orang-orang Kafir)</option>
+                <option value="110">110. An-Nasr (Pertolongan)</option>
+                <option value="111">111. Al-Lahab (Gejolak Api)</option>
+                <option value="112">112. Al-Ikhlas (Ikhlas)</option>
+                <option value="113">113. Al-Falaq (Waktu Subuh)</option>
+                <option value="114">114. An-Nas (Umat Manusia)</option>
+            </select>
+                <input type="submit" value="Search" class="btn btn-primary">
+            </div>
+        </form>
+    </div>
+
+    <div class="container mt-5 pt-1">
+        <nav>
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Al-Qur'an</button>
+                <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Juz 'Amma</button>
+                <!-- <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</button>
+                <button class="nav-link" id="nav-disabled-tab" data-bs-toggle="tab" data-bs-target="#nav-disabled" type="button" role="tab" aria-controls="nav-disabled" aria-selected="false" disabled>Disabled</button> -->
+            </div>
+        </nav>
+        <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+                <div class="row">
+                    <% dataSurah.forEach(data => { %>
+                        <div class="col-3 mt-4">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        <%= data.number %>.
+                                            <%= data.name %>&nbsp;<span class="badge bg-secondary rounded-pill"><%= data.numberOfAyahs %></span></h5>
+                                    <p class="card-text">Surah :
+                                        <%= data.revelation %><br>Terjemah :
+                                            <%= data.translation %>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <% }) %>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+                <div class="row">
+                    <% dataSurah.forEach(data => { %>
+                        <% if(data.number >= 78) { %>
+                            <div class="col-3 mt-4">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">
+                                            <%= data.number %>.
+                                                <%= data.name %>&emsp;<span class="badge bg-secondary rounded-pill"><%= data.numberOfAyahs %></span></h5>
+                                        <p class="card-text">Surah :
+                                            <%= data.revelation %><br>Terjemah :
+                                                <%= data.translation %>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <% } %>
+                                <% }) %>
+                </div>
+            </div>
+            <!-- <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">...</div>
+            <div class="tab-pane fade" id="nav-disabled" role="tabpanel" aria-labelledby="nav-disabled-tab" tabindex="0">...</div> -->
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+
+</html>
